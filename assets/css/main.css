@@ -3495,7 +3495,7 @@ input, select, textarea {
 					 	width: 25%; 
 					 	height: 25%;
 					  	align-items: center;
-					  	margin-top: -30%;					  	
+					  	margin-top: -50%;					  	
 					  	display: inline-block;
 						max-width: 95%;
 						position: relative;
@@ -3522,8 +3522,8 @@ input, select, textarea {
 				}
 
 				.imglogo{
-					width: 90%;
-					height: 60%;
+					width: 100%;
+					height: 100%;
 				}
 
 
@@ -3885,7 +3885,7 @@ input, select, textarea {
 				top: 0;
 				width: 100%;
 				z-index: 10001;
-				background: #FFEFD5 /*alter*/;
+				background: #D6CAC2 /*alter*/;
 				box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
 			}
 
@@ -3901,6 +3901,10 @@ input, select, textarea {
 					#titleBar .title a {
 						color: inherit;
 						border: 0;
+					}
+
+						#titleBar .imglogo {
+						width: 50%;
 					}
 
 				#titleBar .toggle {
@@ -3924,7 +3928,7 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:before {
-						background: #CCBFAA; /*alter*/
+						background: #d6cac2; /*alter*/
 						color: rgba(63, 57, 44, 0.5); /* alter */
 						content: '\f0c9';
 						display: block;
@@ -3959,14 +3963,14 @@ input, select, textarea {
 				top: 0;
 				width: 275px;
 				z-index: 10002;
-				background: #181920;
+				background: #d6cac2;
 				padding: 0.75em 1.25em;
 			}
 
 				#navPanel .link {
 					border: 0;
 					border-top: solid 1px rgba(255, 255, 255, 0.05);
-					color: #1C1C1C; /*alter*/;
+					color: #1C1C1C; /*alter*/
 					display: block;
 					height: 3em;
 					line-height: 3em;
@@ -3982,7 +3986,7 @@ input, select, textarea {
 					}
 
 					#navPanel .link.depth-0 {
-						color: #CCBFAA; /*alter*/
+						color: #fff; /*alter*/
 						font-weight: 300;
 					}
 
