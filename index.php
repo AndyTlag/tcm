@@ -20,10 +20,9 @@
 			<h1 id="logo"><a href="index.html"><img class="imglogo" src="images/escrita-white.png" /></a></h1>
 			<nav id="nav">
 				<ul id="index">
-					<li><a href="index.html">Sobre</a></li>						
-					<li><a href="principal.html">Ofertas</a></li>
-					<li><a href="upload.html">Anunciar</a></li>
-					<li><a href="login.html" class="button primary">Login</a></li>
+					<li><a href="index.php">Sobre</a></li>						
+					<li><a href="principal.php">Ofertas</a></li>
+					<li><a href="upload.php" class="button primary">Anunciar</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -46,17 +45,15 @@
 
 		<!-- One -->
 		<section id="one" class="spotlight style1 bottom">
-			<span class="image fit main"><img src="images/pic02.jpg" alt="" /></span>
+			<span class="image fit main"><img src="images/pic03.jpg"  /></span>
 			<div class="content">
-				<div class="container">
-					<div class="row">
-						<div class="col-4 col-12-medium">
-							<header>
-								<h2>Plataforma Second-Hand Book</h2>
-								<p>Plataforma virtual sem fins lucrativos na qual poderá unir pessoas cujo estão à procura de livros antigos que já não estão mais a venda, ou que precisam de uma grande busca para que possa encontra-los em lojas físicas.</p>
-							</header>
-						</div>
-					</div>	
+				<div class="content">
+					
+					<header>
+						<h2>Plataforma Second-Hand Book</h2>
+						<p>Plataforma virtual sem fins lucrativos na qual poderá unir pessoas cujo estão à procura de livros antigos que já não estão mais a venda, ou que precisam de uma grande busca para que possa encontra-los em lojas físicas.</p>
+					</header>
+					
 				</div>
 			</div>
 			
@@ -65,7 +62,7 @@
 
 		<!-- Two -->
 		<section id="two" class="spotlight style2 right">
-			<span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
+			<span class="image fit main"><img src="images/pic02.jpg" alt="" /></span>
 			<div class="content">
 				<header class="desc">
 					<h2>Objetivo</h2>

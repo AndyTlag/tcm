@@ -1,0 +1,110 @@
+.formulario{
+    /*definindo a largura em pixels do formulario*/
+    width: 50%;
+    /*Informando que a largura não poderá ultrapassar 100% da tela o que ajuda a manter responsivo*/
+    max-width: 100%;
+    /*Centralizando*/
+    margin: auto;
+    /*Dando um espaçamento de 30px com o que estiver acima*/
+    margin-top: 30px;
+    /*defininido espaçamento de 20px entre tudo ao redor*/
+    padding: 20px;
+    /*criando a sombra de uma caixa ao redor e definindo a cor, tamanho e opacidade do sombreamento */
+    box-shadow: 0 0 20px 5px rgba(0,0,0,0.8);
+    /*posicionando o elemento e definindo que a posição dele pode ser relativa*/
+    position: relative;
+}
+ /*editando o a classe de nome titulo*/
+.form_titulo{
+    /*centralizando o texto*/
+    text-align: center;
+    /*definindo que a margem relativa ao topo do elemento é 0 nula*/
+    margin-top: 0;
+    /*definindo uma cor para o elemnto*/
+    color:rgba(0,0,0,0.7);
+        font-size: 2.0em;
+}
+/*editando simultaneamente as classes de nomes labe, input e submit*/
+.form_label, .form_input, .form_submit, .formlabel{
+    /*definindo como será exibido o elemento*/
+    display: block;
+    /*definindo que a largura do elemento é 100% da area em que ele estiver*/
+    width: 100%;
+    /*definindo tamanho da fonte do elemento*/
+    font-size: 1.3em;
+}
+/*editando o a classe de nome input*/
+.form_input{
+    /*definindo espaçamento de 20 px em todas as direçoes*/
+    padding: 20px;
+    /*definindo uma cor para o plano de fundo*/
+    background: rgba(103, 86, 49, 0.3);
+    /*definindo estilo e tamanho da forma*/
+    border: 1px solid rgba(0,0,0,0.3);
+    /*defindindo margem de 40 px abaixo do elemento*/
+    margin-bottom: 40px;
+}
+/*editando o a classe de nome label*/
+.form_label{
+    /*definindo espaçamento na esquerda de 15px*/
+    padding-left: 15px;
+    /*definindo que a posição do elemento é absoluta*/
+    position: absolute;
+    /*definindo margem entre o elemento e o que estiver acima dele*/
+    margin-top: -85px;
+    /*definindo cor do elemento*/
+    color: rgba(129, 96, 29, 0.8);
+    /*definindo posição de profundidade na camada da pagina*/
+    z-index: 0;
+    /*propriedade que permiti definir uma transição entre 2 estados de um elemento*/
+    transition: all 0.2s;
+    
+}
+.formlabel {
+    /*definindo espaçamento na esquerda de 15px*/
+    padding-left: 15px;
+    /*definindo que a posição do elemento é absoluta*/
+    position: absolute;
+  margin-top: -30px;
+    /*definindo cor do elemento*/
+    color: rgba(129, 96, 29, 0.8);
+    /*definindo posição de profundidade na camada da pagina*/
+    z-index: 0;
+    /*propriedade que permiti definir uma transição entre 2 estados de um elemento*/
+    transition: all 0.2s;
+    
+}
+/*editando o a classe de nome submit*/
+.form_submit{
+    /*defind
+    o cor do plano de fundo*/
+    background: rgba(129, 96, 29, 0.8);
+    /*definindo cor do elemento */
+    color: rgb(149, 112, 30);
+    /*muda sprite atual do cursor para o pointer*/
+    cursor: pointer; 
+    /*definindo espacamento em cima e a direita */
+    padding: 10px 20px;
+     /**/
+    border:2px;
+}
+.form_submit:hover{
+    color: rgb(0, 0, 0);
+}
+/*editando o a classe de nome input*/
+.form_input:focus{
+    /*cria uma borda no input quando o mesmo esta selecionado*/
+    outline:1px solid rgba(0,0,0,0.7);
+}
+
+/*editando o a classe de nome input, com a classe label*/
+.form_input:focus + .form_label{
+     /*definindo a margin relativa ao topo do elemento*/
+    margin-top: -135px;
+}
+
+
+.subirtexto{
+    margin-top: -135px;
+    
+}

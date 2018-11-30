@@ -4,12 +4,23 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+
+<?php 
+
+require_once 'assets/lib/bancoDeDados.php';
+
+if (! conectar ()) {
+    echo "Falha ao atualizar o banco de dados!";
+    return;
+}
+?>
 <html>
 	<head>
-		<title>Anunciar</title>
+		<title>Principal</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/anuncio.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -20,10 +31,9 @@
 					<h1 id="logo"><a href="index.html"><img class="imglogo" src="images/escrita-white.png" /></a></h1>
 					<nav id="nav">
 						<ul>
-							<li><a href="index.html">Sobre</a></li>						
-							<li><a href="principal.html">Ofertas</a></li>
-							<li><a href="upload.html">Anunciar</a></li>
-							<!--<li><a href="login.html" class="button primary">Login</a></li>-->
+				            <li><a href="index.php">Sobre</a></li>						
+							<li><a href="principal.php">Ofertas</a></li>
+							<li><a href="upload.php" class="button primary">Anunciar</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -32,26 +42,40 @@
 				<div id="main" class="wrapper style1">
 					<div class="container">
 						<header class="major">
-							<h2>titulo</h2>
-							<p>bla</p>
+							<h2>Ofertas</h2>
+							<p>Entre em contato com o anunciante para mais informações</p>
 						</header>
+                        <section>
+                            
+                            <div class="adcenter">
+    <?php
+		executarSQL ( "select nome, titulo, genero, contato from Livro" );
+		$arrResultados = recuperarResultados ();
 
-						<!-- Text -->
-							<section>
-																
+		foreach ( $arrResultados as $linha ) {
+            $nomeDoArquivo = $linha["nome"];
+    ?>
+                            
+                            <div class="adorder">
+           
+                                <img  class="ad" src="./livros/<?php echo $nomeDoArquivo?>"/>
+                                <label class="adfont">Titulo: <?php echo $linha["titulo"]; ?> </label>
+                                <label class="adfont">Genero: <?php echo $linha["genero"]; ?></label>
+                                <label class="adfont">Contato anunciante: <?php echo $linha["contato"]; ?></label>
+                           
+                            </div>
+    <?php
+		}
+    ?>
+                            
+                            </div>
 
-								<hr />
-
-								<header>
-									
-
-								<hr />
-
-								
-							</section>
-
-						
+                            
+                        </section>
+                    
+                        
 			<!-- Footer -->
+                        
 				<footer id="footer">
 					<ul class="icons">
 						
@@ -64,6 +88,7 @@
 						<li>mercadolivro.help@gmail.com</li>
 					</ul>
 				</footer>
+
 		</div>
 
 		<!-- Scripts -->
@@ -75,6 +100,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+            </div>
+        </div>
+        
 	</body>
 </html>
