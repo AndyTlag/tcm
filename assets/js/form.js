@@ -22,15 +22,25 @@ for(var j=0 ; j <inputs.length; j++){
 function verificaForm(){
            genero = document.Livform.Genero.value
            email = document.Livform.contato.value
+           senha = document.Livform.txtSenha.value
+
     
             if(email.indexOf('@') ==-1 || email.indexOf('.') ==-1 ){
                 
                 alert("Favor informar um endereço de E-mail valido");
                 return false;
             }
+    if (senha.value == "" || senha.length <= 5 || senha.length >= 11){
+        
+        alert("Favor imforme uma senha de 6 a 10 digitos");
+        return false;
+        
+    }
+
             if (genero=="Selecione o Genero"){
                 alert("Por favor selecione o genero principal do livro!");
                 document.Livform.Genero.focus();
                 return false;
             }
+
 }

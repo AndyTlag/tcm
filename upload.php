@@ -18,7 +18,7 @@
 
 			<!-- Header -->
 				<header id="header">
-					<h1 id="logo"><a href="index.html"><img class="imglogo" src="images/escrita-white.png" /></a></h1>
+					<h1 id="logo"><a href="index.php"><img class="imglogo" src="images/escrita-white.png" /></a></h1>
 					<nav id="nav">
 						<ul>
 				            <li><a href="index.php">Sobre</a></li>						
@@ -33,7 +33,7 @@
 					<div class="container">
 						<header class="major">
 							<h2>CRIE SEU ANUNCIO</h2>
-							<p>Se quiser que seu anuncio seja removido entre em contato com os criadores da pagina.</p>
+							<p>Deseja deletar um de seus anuncios? <a href="deletar.php">clique aqui</a></p>
 						</header>
 
 						<!-- Text -->
@@ -47,6 +47,9 @@
                     
 <input type="text" name="contato" id="contato" class="form_input" required>
 <label for="contato" class="form_label">Informe um email para contato:</label>
+                    
+<input type="password" name="txtSenha" id="Senha" class="form_input" required>
+<label for="Senha" class="form_label">Senha do anuncio:</label>
 		
 <!-- <label for="arquivo" class="form_label">Foto do livro:</label> -->
 		<input class="form_input" type="file" id="arquivo" name="arquivo" required /><br />
@@ -89,7 +92,7 @@ if (! conectar ()) {
 }
 
     function formularioEnviado() {
-	return isset ( $_POST ["txtTitulo"] ) && isset ( $_FILES ["arquivo"] ) && isset ( $_POST ["Genero"] );
+	return isset ( $_POST ["txtTitulo"] ) && isset ( $_POST ["txtSenha"] ) && isset ( $_FILES ["arquivo"] ) && isset ( $_POST ["Genero"] );
 }
 if (formularioEnviado ()) {
 
@@ -99,6 +102,7 @@ if (formularioEnviado ()) {
 	$titulo = $_POST ["txtTitulo"];
 	$genero = $_POST ["Genero"];
     $contato = $_POST ["contato"];
+    $senha= $_POST ["txtSenha"];
 
 	$destino = "./livros/$nomeDoArquivo";
 
@@ -106,7 +110,7 @@ if (formularioEnviado ()) {
 
     
     if($resultado){
-        $sql = "insert into Livro (nome, titulo, genero, contato) values	('$nomeDoArquivo','$titulo','$genero','$contato')";
+        $sql = "insert into Livro (nome, titulo, genero, senha, contato) values	('$nomeDoArquivo','$titulo','$genero','$senha','$contato')";
 		executarSQL ( $sql );
     } else {
 		echo "Falha ao enviar a imagem!";

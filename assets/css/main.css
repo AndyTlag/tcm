@@ -1905,7 +1905,7 @@
 			.logo{
 				width: 250px;
 				align-items: center;
-				margin-top: -40%;					  	
+				margin-top: -320px;					  	
 				display: inline-block;
 				max-width: 95%;
 				position: relative;
@@ -2178,6 +2178,8 @@
 			margin-top: -1em;
 			line-height: 1.75em;
 		}
+
+h2{margin-top: -1em;} /*alter*/
 
 		header h3 + p {
 			font-size: 1.1em;

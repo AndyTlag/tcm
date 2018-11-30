@@ -28,7 +28,7 @@ if (! conectar ()) {
 
 			<!-- Header -->
 				<header id="header">
-					<h1 id="logo"><a href="index.html"><img class="imglogo" src="images/escrita-white.png" /></a></h1>
+					<h1 id="logo"><a href="index.php"><img class="imglogo" src="images/escrita-white.png" /></a></h1>
 					<nav id="nav">
 						<ul>
 				            <li><a href="index.php">Sobre</a></li>						
@@ -46,6 +46,7 @@ if (! conectar ()) {
 							<p>Entre em contato com o anunciante para mais informações</p>
 						</header>
                         <section>
+                            
                             
                             <div class="adcenter">
     <?php

@@ -1,0 +1,10 @@
+.delete{
+    box-shadow: 0 0 20px 5px rgba(0,0,0,0.8);
+    position: fixed;
+    top: 150px;
+    margin-left: 30%;
+    background: white;
+    display: none;
+
+    
+}

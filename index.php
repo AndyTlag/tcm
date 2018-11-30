@@ -17,7 +17,7 @@
 
 		<!-- Header -->
 		<header id="header">
-			<h1 id="logo"><a href="index.html"><img class="imglogo" src="images/escrita-white.png" /></a></h1>
+			<h1 id="logo"><a href="index.php"><img class="imglogo" src="images/escrita-white.png" /></a></h1>
 			<nav id="nav">
 				<ul id="index">
 					<li><a href="index.php">Sobre</a></li>						
@@ -45,7 +45,7 @@
 
 		<!-- One -->
 		<section id="one" class="spotlight style1 bottom">
-			<span class="image fit main"><img src="images/pic03.jpg"  /></span>
+			<span class="image fit main"><img src="images/pic02.jpg"  /></span>
 			<div class="content">
 				<div class="content">
 					
@@ -62,7 +62,7 @@
 
 		<!-- Two -->
 		<section id="two" class="spotlight style2 right">
-			<span class="image fit main"><img src="images/pic02.jpg" alt="" /></span>
+			<span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
 			<div class="content">
 				<header class="desc">
 					<h2>Objetivo</h2>
