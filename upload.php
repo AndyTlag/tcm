@@ -33,7 +33,7 @@
 					<div class="container">
 						<header class="major">
 							<h2>CRIE SEU ANUNCIO</h2>
-							<p>Deseja deletar um de seus anuncios? <a href="deletar.php">clique aqui</a></p>
+							<p id="pDel">Deseja deletar um de seus anuncios? <a href="deletar.php">clique aqui</a></p>
 						</header>
 
 						<!-- Text -->
@@ -96,7 +96,7 @@ if (! conectar ()) {
 }
 if (formularioEnviado ()) {
 
-	$nomeDoArquivo = rand () . microtime ( true ) . "." . end ( explode ( ".", $_FILES ["arquivo"] ["name"] ) );
+	 @$nomeDoArquivo = rand () . microtime ( true ) . "." . end ( explode ( ".", $_FILES ["arquivo"] ["name"] ) );
 	$caminhoDoArquivo = $_FILES ["arquivo"] ["tmp_name"];
 
 	$titulo = $_POST ["txtTitulo"];
@@ -111,9 +111,12 @@ if (formularioEnviado ()) {
     
     if($resultado){
         $sql = "insert into Livro (nome, titulo, genero, senha, contato) values	('$nomeDoArquivo','$titulo','$genero','$senha','$contato')";
-		executarSQL ( $sql );
+        executarSQL ( $sql );
+        echo "<script type=\"text/javascript\">alert('Anuncio criado com sucesso!');</script>";
+		
     } else {
-		echo "Falha ao enviar a imagem!";
+		
+        echo "<script type=\"text/javascript\">alert('Falha ao criar anuncio!');</script>";
 	}
 }
 desconectar ();

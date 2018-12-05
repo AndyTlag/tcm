@@ -32,7 +32,7 @@
 			
 			<div class="content">
 				<header>
-					<h3>Todos os seus livros favoritos em um só lugar!!!</h3>
+					<h3 id="topocel">Todos os seus livros favoritos em um só lugar!!!</h3>
 					<p class="topo">A praticidade está em um clique...</p>
 				</header>
 			</div>
@@ -66,7 +66,7 @@
 			<div class="content">
 				<header class="desc">
 					<h2>Objetivo</h2>
-					<p style="font-size: 15.6pt;">A principal razão para o desenvolvimento de um site baseado no sistema do Sebo é a praticidade e a facilitação que o mesmo oferecerá. Permitindo que o usuário possa encontrar o livro que deseja de maneira mais prática podendo filtrar nosso acervo pelo nome ou gênero literário, e sem ter a necessidade de transitar entre Sebos físicos em busca de um livro específico, assim economizando tempo e se poupando de possíveis exaustões físicas ou mentais derivadas do esforço de uma busca longa e prolongada que por vezes pode se resultar como improdutiva.</p>
+					<p id="pObj">A principal razão para o desenvolvimento de um site baseado no sistema do Sebo é a praticidade e a facilitação que o mesmo oferecerá. Permitindo que o usuário possa encontrar o livro que deseja de maneira mais prática podendo filtrar nosso acervo pelo nome ou gênero literário, e sem ter a necessidade de transitar entre Sebos físicos em busca de um livro específico, assim economizando tempo e se poupando de possíveis exaustões físicas ou mentais derivadas do esforço de uma busca longa e prolongada que por vezes pode se resultar como improdutiva.</p>
 				</header>
 				
 			</div>
@@ -119,12 +119,7 @@
 				<!-- Five -->
 				<section id="five" class="wrapper style2 special fade">
 					<div class="container">
-						<form method="post" action="#" class="cta">
-							<div class="row gtr-uniform gtr-50">
-								<div class="col-8 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Seu melhor e-mail" alt="Seu melhor e-mail"/></div>
-								<div class="col-4 col-12-xsmall"><input type="submit" value="Comece Já!" alt="Comece Já!" class="fit primary" /></div>
-							</div>
-						</form>
+						<p id="pDeletar">Deseja deletar um de seus anuncios? <br> <a href="deletar.php">Clique Aqui!</a></p>
 					</div>
 				</section>
 

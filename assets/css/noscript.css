@@ -13,3 +13,6 @@
 	body.landing.is-preload:after {
 		display: none;
 	}
+	a{
+    outline: none;
+}

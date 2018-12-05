@@ -98,7 +98,7 @@
 			}
 
 			body, input, select, textarea {
-				color: #1C1C1C; /*alter*/
+				 /*alter*/
 				font-family: "Roboto", Helvetica, sans-serif;
 				font-size: 15pt;
 				font-weight: 100;
@@ -112,14 +112,15 @@
 			-webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 			-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 			transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-			border-bottom: dotted 1px;
-			color: #CCBFAA; /*alter*/
+			
+			color: #00A5FF;
 			text-decoration: none;
 		}
 
 		a:hover {
-			color: #766B51 /*alter*/ !important;
+			
 			border-bottom-color: transparent;
+			outline: none;
 		}
 
 		strong, b {
@@ -1905,7 +1906,7 @@
 			.logo{
 				width: 250px;
 				align-items: center;
-				margin-top: -320px;					  	
+				margin-bottom: -135px;					  	
 				display: inline-block;
 				max-width: 95%;
 				position: relative;
@@ -2166,7 +2167,7 @@
 
 
 		header p {
-			color: #CCBFAA; /*alter*/
+			color: #fff;
 			position: relative;
 			margin: 0 0 1.5em 0;
 		}
@@ -2174,12 +2175,12 @@
 		.desc {font-size: 14pt;}
 
 		header h2 + p {
-			font-size: 1.25em;
+			font-size: 15.6pt;
 			margin-top: -1em;
 			line-height: 1.75em;
 		}
 
-h2{margin-top: -1em;} /*alter*/
+h2{margin-top: -1.5em;} /*alter*/
 
 		header h3 + p {
 			font-size: 1.1em;
@@ -2247,7 +2248,7 @@ h2{margin-top: -1em;} /*alter*/
 			-webkit-transition: border-color 0.2s ease-in-out;
 			-ms-transition: border-color 0.2s ease-in-out;
 			transition: border-color 0.2s ease-in-out;
-			background: transparent;
+			background: black; /*alter caue*/
 			border-radius: 4px;
 			border: solid 1px rgba(255, 255, 255, 0.3);
 			color: inherit;
@@ -2821,7 +2822,7 @@ h2{margin-top: -1em;} /*alter*/
 			-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 			-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 			transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-			background-color: transparent;
+			background-color: black;/*alter caue*/
 			border-radius: 4px;
 			border: 0;
 			box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3);
@@ -2887,7 +2888,7 @@ h2{margin-top: -1em;} /*alter*/
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #CCBFAA; /*alter*/
+			background-color: #6F6F6F;
 			box-shadow: none;
 			color: #ffffff !important;
 		}
@@ -2896,7 +2897,7 @@ h2{margin-top: -1em;} /*alter*/
 		input[type="reset"].primary:hover,
 		input[type="button"].primary:hover,
 		.button.primary:hover {
-			background-color: #635744; /* alter */
+			/*! background-color: #000; */ /* alter */
 		}
 
 		input[type="submit"].primary:active,
@@ -3363,7 +3364,7 @@ h2{margin-top: -1em;} /*alter*/
 		}
 
 		#header {
-			background: rgba(255, 239, 213, 0.965); /*alter*/
+			background: rgba(189, 180, 165, 0.965);
 			box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
 			cursor: default;
 			height: 3.5em;
@@ -3509,7 +3510,7 @@ h2{margin-top: -1em;} /*alter*/
 		#banner .logo img {
 			width: 400px;
 			align-items: center;
-			margin-top: -40%;					  	
+			margin-top: -350px;					  	
 			display: inline-block;
 			max-width: 95%;
 			position: relative;
@@ -4162,3 +4163,13 @@ h2{margin-top: -1em;} /*alter*/
 				#body{
 					width: 100% !important; height: 100% !important;
 				}
+
+
+@media screen and (height: 768px){
+	h2{
+		margin-top: -85px;
+	}
+	#pObj{
+		font-size: 12pt;
+	}
+}

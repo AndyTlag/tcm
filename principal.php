@@ -75,23 +75,34 @@ if (! conectar ()) {
                         </section>
                     
                         
-			<!-- Footer -->
-                        
+			<!-- Five -->
+				<section id="five" class="wrapper style2 special fade">
+					<div class="container">
+						<p id="pDeletar">Deseja deletar um de seus anuncios? <br> <a href="deletar.php">Clique Aqui!</a></p>
+					</div>
+				</section>
+
+				<!-- Footer -->
 				<footer id="footer">
-					<ul class="icons">
-						
-						<li><a href="https://github.com/AndyTlag/tcm" class="icon alt fa-github" target="blank"><span class="label">GitHub</span></a></li>
-						<li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+
+					<ul class="icons">						
+						<li><a class="icon alt fa-envelope" target="blank" ><span class="label">Email</span></a></li>
+						<li>mercadolivro.help@gmail.com</li>
 					</ul>
+
 					<ul class="copyright">
 						<li>&copy; Copyright © 2018.</li>
 						<li>Criators: Andy Lima &amp; Cau&ecirc; Luiz</li>
-						<li>mercadolivro.help@gmail.com</li>
 					</ul>
+					<br>
+					<ul class="icons">
+						<li><a href="https://github.com/AndyTlag/tcm" class="icon alt fa-github" target="blank"><span class="label">GitHub</span></a></li>
+
+					</ul>
+
 				</footer>
 
-		</div>
-
+			</div>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>

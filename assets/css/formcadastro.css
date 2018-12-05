@@ -108,3 +108,9 @@
     margin-top: -135px;
     
 }
+a{
+    outline: none;
+}
+#pDel{
+     color: black;
+}
