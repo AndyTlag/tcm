@@ -9,7 +9,7 @@ function conectar(): bool {
 
 	try {
 		// PHP Data Object - Objeto de Informações do PHP
-		$conexao = new PDO ( $dsn, "root", "1234" );
+		$conexao = new PDO ( $dsn, "root", "" );
 		return true;
 	} catch ( Exception $e ) {
 		return false;

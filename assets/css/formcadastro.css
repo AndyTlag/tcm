@@ -1,6 +1,6 @@
 .formulario{
     /*definindo a largura em pixels do formulario*/
-    width: 50%;
+    /*width: 50%;*/
     /*Informando que a largura não poderá ultrapassar 100% da tela o que ajuda a manter responsivo*/
     max-width: 100%;
     /*Centralizando*/
@@ -8,7 +8,7 @@
     /*Dando um espaçamento de 30px com o que estiver acima*/
     margin-top: 30px;
     /*defininido espaçamento de 20px entre tudo ao redor*/
-    padding: 20px;
+    padding: 50px;
     /*criando a sombra de uma caixa ao redor e definindo a cor, tamanho e opacidade do sombreamento */
     box-shadow: 0 0 20px 5px rgba(0,0,0,0.8);
     /*posicionando o elemento e definindo que a posição dele pode ser relativa*/
@@ -38,7 +38,7 @@
     /*definindo espaçamento de 20 px em todas as direçoes*/
     padding: 20px;
     /*definindo uma cor para o plano de fundo*/
-    background: rgba(103, 86, 49, 0.3);
+    background: #f8f8ff;
     /*definindo estilo e tamanho da forma*/
     border: 1px solid rgba(0,0,0,0.3);
     /*defindindo margem de 40 px abaixo do elemento*/
@@ -78,18 +78,19 @@
 .form_submit{
     /*defind
     o cor do plano de fundo*/
-    background: rgba(129, 96, 29, 0.8);
+    background: rgba(0, 0, 0, 0.8);
     /*definindo cor do elemento */
-    color: rgb(149, 112, 30);
+    color: #000;
     /*muda sprite atual do cursor para o pointer*/
     cursor: pointer; 
     /*definindo espacamento em cima e a direita */
     padding: 10px 20px;
      /**/
     border:2px;
+    margin-top: 40px;
 }
 .form_submit:hover{
-    color: rgb(0, 0, 0);
+    color: #000;
 }
 /*editando o a classe de nome input*/
 .form_input:focus{
@@ -113,4 +114,8 @@ a{
 }
 #pDel{
      color: black;
+}
+
+#listGen{
+    color: black;
 }

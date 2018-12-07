@@ -43,7 +43,7 @@ if (! conectar ()) {
 					<div class="container">
 						<header class="major">
 							<h2>Ofertas</h2>
-							<p>Entre em contato com o anunciante para mais informações</p>
+							<p id="pDel">Entre em contato com o anunciante para mais informações</p>
 						</header>
                         <section>
                             

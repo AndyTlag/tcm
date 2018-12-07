@@ -41,7 +41,7 @@
 			<div class="container">
 				<header class="major">
 					<h2>Anuncios</h2>
-					<p>Encontre o anuncio que deseja deletar através do email de
+					<p id="pDel">Encontre o anuncio que deseja deletar através do email de
 						contato do mesmo.</p>
 				</header>
 				<section>
@@ -87,7 +87,7 @@ if (houveSolicitacaoDeDelecao()) {
     }
 }
 
-$contato = $_POST["contato"];
+@$contato = $_POST["contato"];
 executarSQL("select nome, titulo, genero, contato, cod_anuncio from Livro where contato= '$contato' ");
 $arrResultados = recuperarResultados();
 

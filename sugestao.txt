@@ -1,0 +1,10 @@
+Incrementos:
+-Denuncia
+-Documentos de aceitação do usuário -> Política de Privacidade, Termos e Condições.
+-Busca Personalizada
+-Capcha de Segurança do E-mail de contato
+-botao topo
+
+Sugestões:
+-Biblioteca
+-

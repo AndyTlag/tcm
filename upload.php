@@ -57,27 +57,27 @@
 	<label for="genero" class="formlabel">Genero Principal:</label>
         <select id="genero" name="Genero" form="Livform" required>
   <option value="Selecione o Genero">Selecione o Genero...</option>
-            <option value="Direito">Direito</option>
-            <option value="Literatura Estrangeira">Literatura Estrangeira</option>
-            <option value="Literatura Infantojuvenil">Literatura Infantojuvenil</option>
-            <option value="Literatura Brasileira">Literatura Brasileira</option>
-            <option value="Didáticos">Didáticos</option>
-            <option value="HQs">HQs</option>
-            <option value="Manga">Manga</option>
-            <option value="Medicina">Medicina</option>
-            <option value="Administração">Administração</option>
-            <option value="Autoajuda">Autoajuda</option>
-            <option value="Artes">Artes</option>
-            <option value="Cusos e idiomas">Cusos e idiomas</option>
-            <option value="Dicionarios e Manuais de Conversação">Dicionarios e Manuais de Conversação</option>
-            <option value="Romance">Romance</option>
-            <option value="Misterio">Misterio</option>
-            <option value="Ação">Ação</option>
-            <option value="Aventura">Aventura</option>
-            <option value="Ficção cientifica">Ficção cientifica</option>
-            <option value="Fantasia">Fantasia</option>
-            <option value="Suspense">Suspense</option>
-            <option value="Poesia">Poesia</option>
+            <option id="listGen" value="Direito">Direito</option>
+            <option id="listGen" value="Literatura Estrangeira">Literatura Estrangeira</option>
+            <option id="listGen" value="Literatura Infantojuvenil">Literatura Infantojuvenil</option>
+            <option id="listGen" value="Literatura Brasileira">Literatura Brasileira</option>
+            <option id="listGen" value="Didáticos">Didáticos</option>
+            <option id="listGen" value="HQs">HQs</option>
+            <option id="listGen" value="Manga">Manga</option>
+            <option id="listGen" value="Medicina">Medicina</option>
+            <option id="listGen" value="Administração">Administração</option>
+            <option id="listGen" value="Autoajuda">Autoajuda</option>
+            <option id="listGen" value="Artes">Artes</option>
+            <option id="listGen" value="Cusos e idiomas">Cusos e idiomas</option>
+            <option id="listGen" value="Dicionarios e Manuais de Conversação">Dicionarios e Manuais de Conversação</option>
+            <option id="listGen" value="Romance">Romance</option>
+            <option id="listGen" value="Misterio">Misterio</option>
+            <option id="listGen" value="Ação">Ação</option>
+            <option id="listGen" value="Aventura">Aventura</option>
+            <option id="listGen" value="Ficção cientifica">Ficção cientifica</option>
+            <option id="listGen" value="Fantasia">Fantasia</option>
+            <option id="listGen" value="Suspense">Suspense</option>
+            <option id="listGen" value="Poesia">Poesia</option>
 
         </select>
 
